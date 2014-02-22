@@ -1,0 +1,20 @@
+<div ng-include="'partials/navbar'"></div>
+
+<div class="jumbotron">
+    <h1>Welcome</h1>
+    <p class="lead">
+        Functionality coming soon!
+    </p>
+    <p><a class="btn btn-lg btn-success" ng-href="#">Yay?</a></p>
+</div>
+
+<div class="row coming-soon">
+    <div ng-repeat="thing in awesomeThings">
+        <h4>{{thing.name}}</h4>
+        <p>{{thing.info}}</p>
+    </div>
+</div>
+
+<div class="footer">
+    <p>♥ from niftymonkey</p>
+</div>
