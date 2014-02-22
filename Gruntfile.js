@@ -404,7 +404,7 @@ module.exports = function (grunt) {
         this.async();
     });
 
-    grunt.registerTask('serve', function (target) {
+    grunt.registerTask('serve', 'Runs an express instance and opens the application in the browser.', function (target) {
         if (target === 'dist') {
             return grunt.task.run(['build', 'express:prod', 'open', 'express-keepalive']);
         }
@@ -420,7 +420,7 @@ module.exports = function (grunt) {
         ]);
     });
 
-    grunt.registerTask('server', function () {
+    grunt.registerTask('server', 'Alias for the serve task.', function () {
         grunt.log.warn('The `server` task has been deprecated. Use `grunt serve` to start a server.');
         grunt.task.run(['serve']);
     });
