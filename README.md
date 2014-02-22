@@ -1,5 +1,5 @@
 # Order Application
-[![Build Status](https://travis-ci.org/niftymonkey/order-form.png?branch=master)](https://travis-ci.org/niftymonkey/order-form)
+[![Build Status](https://travis-ci.org/niftymonkey/order-form.png?branch=master)](https://travis-ci.org/niftymonkey/order-form)  
 Simple web-based application for ordering items.
 
 
