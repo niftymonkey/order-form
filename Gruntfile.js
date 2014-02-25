@@ -22,6 +22,7 @@ module.exports = function (grunt) {
         yeoman: {
             // configurable paths
             app: require('./bower.json').appPath || 'app',
+            lib: 'lib',
             dist: 'dist'
         },
         express: {
@@ -434,6 +435,7 @@ module.exports = function (grunt) {
 
     grunt.registerTask('build', [
         'clean:dist',
+        'jshint',
         'bower-install',
         'useminPrepare',
         'concurrent:dist',

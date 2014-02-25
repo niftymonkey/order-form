@@ -1,4 +1,5 @@
 'use strict';
+var expect = chai.expect;
 
 describe('Controller: MainCtrl', function () {
 
@@ -21,8 +22,8 @@ describe('Controller: MainCtrl', function () {
     }));
 
     it('should attach a list of awesomeThings to the scope', function () {
-        expect(scope.awesomeThings).toBeUndefined();
+        expect(scope.awesomeThings).to.equal(undefined);
         $httpBackend.flush();
-        expect(scope.awesomeThings.length).toBe(4);
+        expect(scope.awesomeThings.length).to.equal(4);
     });
 });
