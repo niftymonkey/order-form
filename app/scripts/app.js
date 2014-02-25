@@ -1,11 +1,6 @@
 'use strict';
 
-angular.module('orderFormApp', [
-    'ngCookies',
-    'ngResource',
-    'ngSanitize',
-    'ngRoute'
-])
+angular.module('orderFormApp', ['ngCookies', 'ngResource', 'ngSanitize', 'ngRoute'])
     .config(function ($routeProvider, $locationProvider) {
         $routeProvider
             .when('/', {
