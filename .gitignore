@@ -6,6 +6,7 @@ app/bower_components
 heroku
 /views
 dist
+.env
 
 # IntelliJ stuff
 .idea

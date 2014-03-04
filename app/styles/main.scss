@@ -65,6 +65,27 @@ body {
     margin-top: 28px;
 }
 
+nav .navbar-nav {
+    float: right;
+}
+
+/* Responsive: Phone browsers */
+@media screen and (max-width: 767px) {
+    body {
+        padding-top: 0;
+        padding-bottom: 0;
+    }
+
+    nav {
+        margin-left: -20px;
+        margin-right: -20px;
+    }
+
+    nav .navbar-nav {
+        float: none;
+    }
+}
+
 /* Responsive: Portrait tablets and up */
 @media screen and (min-width: 768px) {
     .container {
