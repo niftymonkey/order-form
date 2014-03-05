@@ -7,6 +7,14 @@ angular.module('orderFormApp', ['ngCookies', 'ngResource', 'ngSanitize', 'ngRout
                 templateUrl: 'partials/main',
                 controller: 'MainCtrl'
             })
+            .when('/order', {
+                templateUrl: 'partials/order',
+                controller: 'MainCtrl'
+            })
+            .when('/about', {
+                templateUrl: 'partials/about',
+                controller: 'MainCtrl'
+            })
             .otherwise({
                 redirectTo: '/'
             });

@@ -6,6 +6,14 @@ angular.module('orderFormApp')
             {
                 'title': 'Home',
                 'link': '/'
+            },
+            {
+                'title': 'Order',
+                'link': '/order'
+            },
+            {
+                'title': 'About',
+                'link': '/about'
             }
         ];
 

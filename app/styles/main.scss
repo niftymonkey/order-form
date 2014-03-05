@@ -15,7 +15,6 @@ body {
 
 /* Everything but the jumbotron gets side spacing for mobile first views */
 .header,
-.coming-soon,
 .footer {
     padding-left: 15px;
     padding-right: 15px;
@@ -69,6 +68,35 @@ nav .navbar-nav {
     float: right;
 }
 
+.navbar-default .navbar-nav a {
+    background: inherit;
+    border-top: 4px solid transparent;
+}
+
+.navbar-default .navbar-nav a:hover,
+.navbar-default .navbar-nav > .active > a:hover {
+    background: inherit;
+    border-top: 4px solid rgba(192, 192, 192, 0.75);
+}
+
+.navbar-default .navbar-nav > .active > a {
+    background: inherit;
+    border-top: 4px solid rgba(122, 215, 219, 1);
+}
+
+.navbar-nav {
+    margin: 0 -11px;
+}
+
+.navbar-collapse {
+    padding-right: 12px;
+}
+
+.navbar-default .navbar-toggle:hover,
+.navbar-default .navbar-toggle:focus {
+    background-color: inherit;
+}
+
 /* Responsive: Phone browsers */
 @media screen and (max-width: 767px) {
     body {
@@ -83,6 +111,34 @@ nav .navbar-nav {
 
     nav .navbar-nav {
         float: none;
+    }
+
+    .navbar-default .navbar-nav > .active > a,
+    .navbar-default .navbar-nav > .active > a:hover,
+    .navbar-default .navbar-nav > .active > a:focus,
+    {
+        border-top: 0px;
+        border-left: 4px solid rgba(192, 192, 192, 0.75);
+    }
+
+    .navbar-default .navbar-nav a {
+        border-top: 0px;
+        border-left: 4px solid transparent;
+    }
+
+    .navbar-default .navbar-nav a:hover,
+    .navbar-default .navbar-nav a:focus {
+        background: inherit;
+        border-top: 0px;
+        border-left: 4px solid rgba(192, 192, 192, 0.75);
+    }
+
+    .navbar-default .navbar-nav > .active > a {
+        border-left: 4px solid rgba(122, 215, 219, 1);
+    }
+
+    .navbar-nav {
+        margin: 0 -11px;
     }
 }
 
@@ -106,5 +162,9 @@ nav .navbar-nav {
     /* Remove the bottom border on the jumbotron for visual effect */
     .jumbotron {
         border-bottom: 0;
+    }
+
+    .navbar-nav > li > a {
+        padding-top: 11px;
     }
 }
