@@ -7,9 +7,9 @@ angular.module('orderFormApp', ['ngCookies', 'ngResource', 'ngSanitize', 'ngRout
                 templateUrl: 'partials/main',
                 controller: 'MainCtrl'
             })
-            .when('/order', {
-                templateUrl: 'partials/order',
-                controller: 'MainCtrl'
+            .when('/menu', {
+                templateUrl: 'partials/menu',
+                controller: 'MenuCtrl'
             })
             .when('/about', {
                 templateUrl: 'partials/about',

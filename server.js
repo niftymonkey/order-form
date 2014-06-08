@@ -18,7 +18,7 @@ var config = require('./lib/config/config');
 // Connect to database
 var db = mongoose.connect(config.mongo.uri, config.mongo.options);
 
-// Bootstrap models
+// load the mongoose model object scripts
 var modelsPath = path.join(__dirname, 'lib/models');
 fs.readdirSync(modelsPath).forEach(function (file) {
     require(modelsPath + '/' + file);
@@ -26,13 +26,13 @@ fs.readdirSync(modelsPath).forEach(function (file) {
 
 // Populate empty DB with sample data
 require('./lib/config/dummydata');
+require('./lib/config/base-data');
 
+// Create and configure the express app
 var app = express();
-
-// Express settings
 require('./lib/config/express')(app);
 
-// Routing
+// Set up routes
 require('./lib/routes')(app);
 
 // Start server

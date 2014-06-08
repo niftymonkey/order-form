@@ -8,8 +8,8 @@ angular.module('orderFormApp')
                 'link': '/'
             },
             {
-                'title': 'Order',
-                'link': '/order'
+                'title': 'Menu',
+                'link': '/menu'
             },
             {
                 'title': 'About',

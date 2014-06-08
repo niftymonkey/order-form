@@ -1,5 +1,8 @@
 $icon-font-path: "/bower_components/sass-bootstrap/fonts/";
-
+img {
+    min-width: 100%;
+    max-width: 100%;
+}
 .browsehappy {
     margin: 0.2em 0;
     background: #ccc;
@@ -57,7 +60,7 @@ body {
 
 /* Supporting "coming soon" content */
 .coming-soon {
-    margin: 40px 0;
+    margin: 0;
 }
 
 .coming-soon p + h4 {
@@ -97,6 +100,13 @@ nav .navbar-nav {
     background-color: inherit;
 }
 
+.menu-item {
+    border-bottom: 1px solid rgba(192, 192, 192, 0.75);
+}
+
+.menu-item h4 {
+    text-transform: uppercase;
+}
 /* Responsive: Phone browsers */
 @media screen and (max-width: 767px) {
     body {

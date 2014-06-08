@@ -1,0 +1,11 @@
+<div ng-include="'partials/navbar'"></div>
+
+<div class="row coming-soon">
+    <div class="menu-item" ng-repeat="cookie in cookies">
+        <h4>{{cookie.name}}</h4>
+        <div>
+            <img src="{{cookie.imagePath}}" alt="{{cookie.name}}"/>
+            <p>{{cookie.description}}</p>
+        </div>
+    </div>
+</div>

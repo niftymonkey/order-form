@@ -71,7 +71,7 @@ module.exports = function (grunt) {
                     '<%= yeoman.app %>/views/{,*//*}*.{html,jade}',
                     '{.tmp,<%= yeoman.app %>}/styles/{,*//*}*.css',
                     '{.tmp,<%= yeoman.app %>}/scripts/{,*//*}*.js',
-                    '<%= yeoman.app %>/images/{,*//*}*.{png,jpg,jpeg,gif,webp,svg}',
+                    '<%= yeoman.app %>/images/{,*//*}*.{png,jpg,jpeg,JPG,gif,webp,svg}',
                 ],
 
                 options: {
@@ -205,7 +205,9 @@ module.exports = function (grunt) {
                     src: [
                         '<%= yeoman.dist %>/public/scripts/{,*/}*.js',
                         '<%= yeoman.dist %>/public/styles/{,*/}*.css',
-                        '<%= yeoman.dist %>/public/images/{,*/}*.{png,jpg,jpeg,gif,webp,svg}',
+                        // TODO: put this back in when you can figure out how to point to them
+                        // (currently paths are in base-data)
+                        //'<%= yeoman.dist %>/public/images/{,*/}*.{png,jpg,jpeg,gif,webp,svg}',
                         '<%= yeoman.dist %>/public/styles/fonts/*'
                     ]
                 }
