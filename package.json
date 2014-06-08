@@ -56,6 +56,12 @@
         "node": ">=0.10.0"
     },
     "scripts": {
+        "postinstall": "bower install",
+
+        "prestart": "npm install",
+        "start": "grunt serve",
+
+        "pretest": "npm install",
         "test": "grunt test"
     }
 }

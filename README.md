@@ -39,35 +39,39 @@ You will need to install the following manually as a starting point:
 ### Get Started
 
 #### Clone
-```
-git clone https://github.com/niftymonkey/order-form.git
-cd order-form
-```
-#### Node Dependencies
-This will install all of the base dependencies that are needed for the application and the build system
-```
-npm install
-```
-#### Bower Dependencies
-This will install all of the front-end dependencies that are used in the Angular app.
-```
-bower install
-```
+
+    git clone https://github.com/niftymonkey/order-form.git
+    cd order-form
+
 #### Run the app
-Among other things, this will build, start a watch on the source files, start a server, and launch your default browser to the app.  It will also auto-reload when you make changes to the source files.
-```
-grunt serve
-```
+Among other things, this will install dependencies, build, start a watch on the source files, start a server, and launch your default browser to the app.  It will also auto-reload when you make changes to the source files.
+
+    npm start
+
+Alternatively, once you've installed all dependencies, you can simply run the application in development or production mode using the grunt tasks.  
+
+##### Development
+
+    grunt serve
+
+##### Production
+
+    grunt serve:dist
+
 #### Run the tests
 If you want to run the tests, it's a simple command as well
-```
-grunt test
-```
+
+    npm test
+
+Or the alternative grunt task
+
+    grunt test
+
 #### Misc Grunt Tasks
 You can run the following and check the "Available Tasks" for a list of other tasks you can run on the command-line
-```
-grunt --help
-```
+
+    grunt --help
+
 
 [1]:http://www.mean.io/
 [2]:http://nodejs.org/
