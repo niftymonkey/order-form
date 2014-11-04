@@ -11,3 +11,6 @@ dist
 # IntelliJ stuff
 .idea
 *.iml
+
+# Misc
+*.7z
